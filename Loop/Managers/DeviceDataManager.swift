@@ -276,7 +276,7 @@ final class DeviceDataManager: CarbStoreDelegate, CarbStoreSyncDelegate, DoseSto
                     return
                 }
 
-                let warningThresholds: [Double] = [10, 20, 30]
+                let warningThresholds: [Double] = [5, 10, 15]
 
                 for threshold in warningThresholds {
                     if newVolume <= threshold && previousVolume > threshold {
